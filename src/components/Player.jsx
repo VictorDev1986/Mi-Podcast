@@ -162,7 +162,7 @@ const Player = () => {
         </audio>
 
         {/* Contenedor de controles personalizados */}
-        <div className="container mx-auto px-4 py-4 relative">
+        <div className="max-w-7xl mx-auto px-4 py-4 relative">
           
           {/* Botón para ocultar/mostrar el reproductor */}
           <button

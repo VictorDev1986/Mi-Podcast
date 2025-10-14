@@ -28,7 +28,7 @@ const EpisodeCard = ({ episode }) => {
   return (
     // Tarjeta con animación hover y sombra
     // episode-card es una clase personalizada definida en index.css
-    <div className="episode-card bg-white rounded-2xl shadow-md overflow-hidden">
+    <div className="episode-card bg-dark-card rounded-2xl shadow-md shadow-primary/20 overflow-hidden border border-purple-500/10 hover:border-purple-500/30 transition-all">
       
       {/* Contenedor de la imagen con link al detalle */}
       <Link to={`/episode/${episode.id}`}>
@@ -66,13 +66,13 @@ const EpisodeCard = ({ episode }) => {
         
         {/* Título del episodio con link */}
         <Link to={`/episode/${episode.id}`}>
-          <h3 className="text-xl font-bold text-dark mb-2 hover:text-primary transition-colors line-clamp-2">
+          <h3 className="text-xl font-bold text-white mb-2 hover:text-primary transition-colors line-clamp-2">
             {episode.title}
           </h3>
         </Link>
 
         {/* Descripción truncada a 3 líneas */}
-        <p className="text-gray-600 text-sm mb-4 line-clamp-3">
+        <p className="text-gray-400 text-sm mb-4 line-clamp-3">
           {episode.description}
         </p>
 
@@ -106,8 +106,8 @@ const EpisodeCard = ({ episode }) => {
           // Cambiamos el estilo si es el episodio actual
           className={`w-full py-3 px-4 rounded-lg font-semibold transition-all flex items-center justify-center space-x-2
             ${isCurrentEpisode && isPlaying
-              ? 'bg-secondary text-white shadow-lg' 
-              : 'bg-gradient-to-r from-primary to-secondary text-white hover:shadow-xl hover:scale-105'
+              ? 'bg-secondary text-white shadow-lg shadow-secondary/50' 
+              : 'bg-gradient-to-r from-primary to-secondary text-white hover:shadow-xl hover:shadow-primary/50 hover:scale-105'
             }`}
         >
           {/* Ícono de play/pause dinámico */}

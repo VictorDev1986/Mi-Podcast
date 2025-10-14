@@ -38,9 +38,8 @@ function App() {
           Estructura principal de la aplicación:
           - flex flex-col: diseño vertical (columna)
           - min-h-screen: altura mínima del 100% de la pantalla
-          - pb-32: padding bottom para dejar espacio al reproductor fijo
         */}
-        <div className="flex flex-col min-h-screen pb-32">
+        <div className="flex flex-col min-h-screen">
           
           {/* Header: barra de navegación que aparece en todas las páginas */}
           <Header />
@@ -84,15 +83,16 @@ function App() {
 
           {/* Footer: pie de página que aparece en todas las páginas */}
           <Footer />
-
-          {/* 
-            Player: reproductor global de audio
-            - Posicionado fijo en la parte inferior de la pantalla
-            - Solo se muestra cuando hay un episodio seleccionado
-            - Persiste entre cambios de página gracias al contexto
-          */}
-          <Player />
         </div>
+
+        {/* 
+          Player: reproductor global de audio
+          - Posicionado fijo en la parte inferior de la pantalla
+          - Solo se muestra cuando hay un episodio seleccionado
+          - Persiste entre cambios de página gracias al contexto
+          - Fuera del contenedor principal para no afectar el layout
+        */}
+        <Player />
       </Router>
     </PlayerProvider>
   );

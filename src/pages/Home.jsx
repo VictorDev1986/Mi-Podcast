@@ -15,22 +15,36 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     // Contenedor principal con mínimo de altura de pantalla completa
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-dark">
       
       {/* Hero Section - Sección de bienvenida con gradiente */}
-      <section className="bg-gradient-to-r from-primary to-secondary text-white py-20">
-        <div className="container mx-auto px-4 text-center">
+      <section className="bg-gradient-purple text-white py-20 relative overflow-hidden">
+        {/* Efectos de fondo adicionales */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-dark/50"></div>
+        <div className="absolute top-10 left-10 w-72 h-72 bg-primary/20 rounded-full filter blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-10 right-10 w-96 h-96 bg-secondary/20 rounded-full filter blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="container mx-auto px-4 text-center relative z-10">
           
           {/* Título principal con animación */}
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-            Bienvenidos a Mi Podcast
+            Bienvenidos a mi podcats
           </h1>
           
           {/* Descripción */}
           <p className="text-xl md:text-2xl mb-8 text-gray-100 max-w-3xl mx-auto">
-            Tu espacio para aprender, inspirarte y crecer. Descubre episodios sobre 
-            creatividad, tecnología, productividad y mucho más.
+            Podcasts creados con Inteligencia Artificial. Explora contenido único 
+            sobre idiomas, tecnología, aprendizaje y desarrollo personal,resumenes de libros diseñado para inspirarte 
+            y ayudarte a crecer.
           </p>
+
+          {/* Badge de IA */}
+          <div className="flex justify-center mb-4">
+            <span className="bg-white bg-opacity-20 backdrop-blur-lg text-white px-4 py-2 rounded-full text-sm font-medium flex items-center space-x-2">
+              <span>🤖</span>
+              <span>Creado con IA</span>
+              <span>✨</span>
+            </span>
+          </div>
 
           {/* Botones de llamada a la acción */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -57,27 +71,32 @@ const Home = () => {
             
             {/* Estadística 1: Episodios */}
             <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6">
-              <div className="text-4xl font-bold mb-2">50+</div>
-              <div className="text-gray-100">Episodios</div>
+              <div className="text-4xl font-bold mb-2">🎙️</div>
+              <div className="text-gray-100 font-semibold">Contenido Original</div>
+              <div className="text-sm text-gray-200 mt-1">Creado con IA</div>
             </div>
 
-            {/* Estadística 2: Oyentes */}
+            {/* Estadística 2: Calidad */}
             <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6">
-              <div className="text-4xl font-bold mb-2">10K+</div>
-              <div className="text-gray-100">Oyentes</div>
+              <div className="text-4xl font-bold mb-2">🎯</div>
+              <div className="text-gray-100 font-semibold">100% Educativo</div>
+              <div className="text-sm text-gray-200 mt-1">Contenido de valor</div>
             </div>
 
-            {/* Estadística 3: Horas de contenido */}
+            {/* Estadística 3: Innovación */}
             <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6">
-              <div className="text-4xl font-bold mb-2">200+</div>
-              <div className="text-gray-100">Horas de contenido</div>
+              <div className="text-4xl font-bold mb-2">🚀</div>
+              <div className="text-gray-100 font-semibold">Vanguardia Tech</div>
+              <div className="text-sm text-gray-200 mt-1">Producción IA</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Sección de episodios recientes */}
-      <section className="container mx-auto px-4 py-16">
+      <section className="container mx-auto px-4 py-16 relative">
+        {/* Efecto de brillo de fondo */}
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-96 bg-gradient-radial from-primary/10 to-transparent"></div>
         {/* 
           EpisodeList con límite de 6 episodios
           El componente lee automáticamente desde episodes.json
@@ -90,9 +109,9 @@ const Home = () => {
       </section>
 
       {/* Sección de categorías */}
-      <section className="bg-white py-16">
+      <section className="bg-dark-lighter py-16 border-y border-purple-500/20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-dark mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
             Explora por Categoría
           </h2>
 
@@ -100,25 +119,25 @@ const Home = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             
             {/* Tarjeta de categoría: Creatividad */}
-            <div className="bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl p-6 text-white hover:scale-105 transition-transform cursor-pointer shadow-lg">
+            <div className="bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl p-6 text-white hover:scale-105 transition-all cursor-pointer shadow-lg shadow-purple-500/30 hover:shadow-2xl hover:shadow-purple-500/50">
               <div className="text-3xl mb-3">🎨</div>
               <h3 className="font-bold text-lg">Creatividad</h3>
             </div>
 
             {/* Tarjeta de categoría: Tecnología */}
-            <div className="bg-gradient-to-br from-blue-400 to-cyan-500 rounded-2xl p-6 text-white hover:scale-105 transition-transform cursor-pointer shadow-lg">
+            <div className="bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl p-6 text-white hover:scale-105 transition-all cursor-pointer shadow-lg shadow-blue-500/30 hover:shadow-2xl hover:shadow-blue-500/50">
               <div className="text-3xl mb-3">💻</div>
               <h3 className="font-bold text-lg">Tecnología</h3>
             </div>
 
             {/* Tarjeta de categoría: Productividad */}
-            <div className="bg-gradient-to-br from-green-400 to-teal-500 rounded-2xl p-6 text-white hover:scale-105 transition-transform cursor-pointer shadow-lg">
+            <div className="bg-gradient-to-br from-green-500 to-teal-600 rounded-2xl p-6 text-white hover:scale-105 transition-all cursor-pointer shadow-lg shadow-green-500/30 hover:shadow-2xl hover:shadow-green-500/50">
               <div className="text-3xl mb-3">📈</div>
               <h3 className="font-bold text-lg">Productividad</h3>
             </div>
 
             {/* Tarjeta de categoría: Entrevistas */}
-            <div className="bg-gradient-to-br from-orange-400 to-red-500 rounded-2xl p-6 text-white hover:scale-105 transition-transform cursor-pointer shadow-lg">
+            <div className="bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl p-6 text-white hover:scale-105 transition-all cursor-pointer shadow-lg shadow-orange-500/30 hover:shadow-2xl hover:shadow-orange-500/50">
               <div className="text-3xl mb-3">🎙️</div>
               <h3 className="font-bold text-lg">Entrevistas</h3>
             </div>
@@ -127,13 +146,16 @@ const Home = () => {
       </section>
 
       {/* Sección de llamada a la acción para newsletter */}
-      <section className="bg-gradient-to-r from-secondary to-primary text-white py-16">
-        <div className="container mx-auto px-4 text-center">
+      <section className="bg-gradient-purple text-white py-16 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-t from-dark/50 to-transparent"></div>
+        <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-accent/20 rounded-full filter blur-3xl"></div>
+        <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            ¿No te quieres perder ningún episodio?
+            El Futuro del Podcasting está aquí
           </h2>
           <p className="text-xl mb-8 text-gray-100">
-            Suscríbete a nuestro newsletter y recibe notificaciones de nuevos episodios
+            Experimenta contenido educativo de calidad generado con Inteligencia Artificial. 
+            Suscríbete para recibir nuevos episodios y actualizaciones
           </p>
 
           {/* Formulario de suscripción */}

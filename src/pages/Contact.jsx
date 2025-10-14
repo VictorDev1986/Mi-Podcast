@@ -94,11 +94,12 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-dark">
       
       {/* Hero section */}
-      <div className="bg-gradient-to-r from-primary to-secondary text-white py-16">
-        <div className="container mx-auto px-4 text-center">
+      <div className="bg-gradient-purple text-white py-16 relative overflow-hidden">
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary/20 rounded-full filter blur-3xl"></div>
+        <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Contáctanos
           </h1>
@@ -119,7 +120,7 @@ const Contact = () => {
           <div className="lg:col-span-1">
             
             {/* Título */}
-            <h2 className="text-2xl font-bold text-dark mb-6">
+            <h2 className="text-2xl font-bold text-white mb-6">
               Información de Contacto
             </h2>
 
@@ -127,7 +128,7 @@ const Contact = () => {
             <div className="space-y-6">
               
               {/* Email */}
-              <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
+              <div className="bg-dark-card border border-purple-500/20 rounded-xl shadow-md shadow-primary/10 p-6 hover:shadow-lg hover:shadow-primary/20 hover:border-purple-500/40 transition-all">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center flex-shrink-0">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -136,7 +137,7 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-dark mb-1">Email</h3>
+                    <h3 className="font-semibold text-white mb-1">Email</h3>
                     <a 
                       href="mailto:contacto@mipodcast.com" 
                       className="text-primary hover:underline"
@@ -148,7 +149,7 @@ const Contact = () => {
               </div>
 
               {/* Redes sociales */}
-              <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
+              <div className="bg-dark-card border border-purple-500/20 rounded-xl shadow-md shadow-primary/10 p-6 hover:shadow-lg hover:shadow-primary/20 hover:border-purple-500/40 transition-all">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-secondary to-primary rounded-full flex items-center justify-center flex-shrink-0">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -157,13 +158,13 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-dark mb-1">Redes Sociales</h3>
-                    <p className="text-gray-600 text-sm mb-2">Síguenos en:</p>
+                    <h3 className="font-semibold text-white mb-1">Redes Sociales</h3>
+                    <p className="text-gray-400 text-sm mb-2">Síguenos en:</p>
                     <div className="flex space-x-3">
                       <a href="#" className="text-primary hover:text-secondary">Twitter</a>
-                      <span className="text-gray-400">•</span>
+                      <span className="text-gray-500">•</span>
                       <a href="#" className="text-primary hover:text-secondary">Instagram</a>
-                      <span className="text-gray-400">•</span>
+                      <span className="text-gray-500">•</span>
                       <a href="#" className="text-primary hover:text-secondary">YouTube</a>
                     </div>
                   </div>
@@ -171,7 +172,7 @@ const Contact = () => {
               </div>
 
               {/* Horario de respuesta */}
-              <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
+              <div className="bg-dark-card border border-purple-500/20 rounded-xl shadow-md shadow-primary/10 p-6 hover:shadow-lg hover:shadow-primary/20 hover:border-purple-500/40 transition-all">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center flex-shrink-0">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -179,8 +180,8 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-dark mb-1">Tiempo de respuesta</h3>
-                    <p className="text-gray-600 text-sm">
+                    <h3 className="font-semibold text-white mb-1">Tiempo de respuesta</h3>
+                    <p className="text-gray-400 text-sm">
                       Respondemos en 24-48 horas hábiles
                     </p>
                   </div>
@@ -191,9 +192,9 @@ const Contact = () => {
 
           {/* Columna 2: Formulario de contacto */}
           <div className="lg:col-span-2">
-            <div className="bg-white rounded-2xl shadow-lg p-8">
+            <div className="bg-dark-card border border-purple-500/20 rounded-2xl shadow-lg shadow-primary/10 p-8">
               
-              <h2 className="text-2xl font-bold text-dark mb-6">
+              <h2 className="text-2xl font-bold text-white mb-6">
                 Envíanos un mensaje
               </h2>
 
@@ -224,7 +225,7 @@ const Contact = () => {
                 
                 {/* Campo: Nombre */}
                 <div>
-                  <label htmlFor="name" className="block text-gray-700 font-semibold mb-2">
+                  <label htmlFor="name" className="block text-gray-300 font-semibold mb-2">
                     Nombre completo *
                   </label>
                   <input
@@ -233,7 +234,7 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 bg-dark text-gray-100 border-2 border-purple-500/20 rounded-lg focus:border-primary focus:outline-none transition-colors placeholder-gray-500"
                     placeholder="Tu nombre"
                     required
                   />
@@ -241,7 +242,7 @@ const Contact = () => {
 
                 {/* Campo: Email */}
                 <div>
-                  <label htmlFor="email" className="block text-gray-700 font-semibold mb-2">
+                  <label htmlFor="email" className="block text-gray-300 font-semibold mb-2">
                     Email *
                   </label>
                   <input
@@ -250,7 +251,7 @@ const Contact = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 bg-dark text-gray-100 border-2 border-purple-500/20 rounded-lg focus:border-primary focus:outline-none transition-colors placeholder-gray-500"
                     placeholder="tu@email.com"
                     required
                   />
@@ -258,7 +259,7 @@ const Contact = () => {
 
                 {/* Campo: Asunto */}
                 <div>
-                  <label htmlFor="subject" className="block text-gray-700 font-semibold mb-2">
+                  <label htmlFor="subject" className="block text-gray-300 font-semibold mb-2">
                     Asunto *
                   </label>
                   <input
@@ -267,7 +268,7 @@ const Contact = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 bg-dark text-gray-100 border-2 border-purple-500/20 rounded-lg focus:border-primary focus:outline-none transition-colors placeholder-gray-500"
                     placeholder="¿Sobre qué quieres hablar?"
                     required
                   />
@@ -275,7 +276,7 @@ const Contact = () => {
 
                 {/* Campo: Mensaje */}
                 <div>
-                  <label htmlFor="message" className="block text-gray-700 font-semibold mb-2">
+                  <label htmlFor="message" className="block text-gray-300 font-semibold mb-2">
                     Mensaje *
                   </label>
                   <textarea
@@ -284,7 +285,7 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows="6"
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary focus:outline-none transition-colors resize-none"
+                    className="w-full px-4 py-3 bg-dark text-gray-100 border-2 border-purple-500/20 rounded-lg focus:border-primary focus:outline-none transition-colors resize-none placeholder-gray-500"
                     placeholder="Escribe tu mensaje aquí..."
                     required
                   ></textarea>
@@ -296,8 +297,8 @@ const Contact = () => {
                   disabled={isSubmitting}
                   className={`w-full py-4 rounded-lg font-bold text-lg transition-all ${
                     isSubmitting
-                      ? 'bg-gray-300 text-gray-600 cursor-not-allowed'
-                      : 'bg-gradient-to-r from-primary to-secondary text-white hover:shadow-xl hover:scale-105'
+                      ? 'bg-dark text-gray-600 cursor-not-allowed'
+                      : 'bg-gradient-to-r from-primary to-secondary text-white hover:shadow-xl hover:shadow-primary/50 hover:scale-105'
                   }`}
                 >
                   {isSubmitting ? (

@@ -67,11 +67,13 @@ const Episodes = () => {
 
   return (
     // Contenedor principal con mínimo de altura de pantalla
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-dark">
       
       {/* Header de la página */}
-      <div className="bg-gradient-to-r from-primary to-secondary text-white py-12">
-        <div className="container mx-auto px-4">
+      <div className="bg-gradient-purple text-white py-12 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-72 h-72 bg-secondary/20 rounded-full filter blur-3xl"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">
             Todos los Episodios
           </h1>
@@ -100,7 +102,7 @@ const Episodes = () => {
               placeholder="Buscar episodios por título o descripción..."
               value={searchTerm}
               onChange={handleSearchChange}
-              className="w-full pl-12 pr-4 py-4 rounded-xl border-2 border-gray-200 focus:border-primary focus:outline-none transition-colors"
+              className="w-full pl-12 pr-4 py-4 rounded-xl bg-dark-card text-black border-2 border-purple-500/20 focus:border-primary focus:outline-none transition-colors placeholder-gray-500"
             />
 
             {/* Botón para limpiar búsqueda (solo visible si hay texto) */}
@@ -119,7 +121,7 @@ const Episodes = () => {
 
         {/* Filtro de categorías */}
         <div className="mb-8">
-          <h3 className="text-lg font-semibold text-gray-700 mb-4 text-center">
+          <h3 className="text-lg font-semibold text-gray-300 mb-4 text-center">
             Filtrar por categoría:
           </h3>
           
@@ -136,8 +138,8 @@ const Episodes = () => {
                 // Cambia el estilo si es la categoría seleccionada
                 className={`px-6 py-2 rounded-full font-medium transition-all ${
                   selectedCategory === category
-                    ? 'bg-gradient-to-r from-primary to-secondary text-white shadow-lg'
-                    : 'bg-white text-gray-700 border-2 border-gray-200 hover:border-primary'
+                    ? 'bg-gradient-to-r from-primary to-secondary text-white shadow-lg shadow-primary/50'
+                    : 'bg-dark-card text-gray-300 border-2 border-purple-500/20 hover:border-primary'
                 }`}
               >
                 {category}
@@ -147,7 +149,7 @@ const Episodes = () => {
         </div>
 
         {/* Contador de resultados */}
-        <div className="text-center text-gray-600 mb-6">
+        <div className="text-center text-gray-400 mb-6">
           {filteredEpisodes.length === 0 ? (
             // Mensaje cuando no hay resultados
             <p className="text-lg">
@@ -180,10 +182,10 @@ const Episodes = () => {
         {filteredEpisodes.length === 0 && (
           <div className="text-center py-12">
             <div className="text-6xl mb-4">🔍</div>
-            <h3 className="text-2xl font-bold text-gray-700 mb-2">
+            <h3 className="text-2xl font-bold text-white mb-2">
               No hay episodios que coincidan
             </h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-400 mb-6">
               Intenta con otros términos de búsqueda o selecciona una categoría diferente
             </p>
             <button
@@ -191,7 +193,7 @@ const Episodes = () => {
                 setSearchTerm('');
                 setSelectedCategory('Todas');
               }}
-              className="bg-gradient-to-r from-primary to-secondary text-white font-semibold px-8 py-3 rounded-lg hover:shadow-xl transition-all"
+              className="bg-gradient-to-r from-primary to-secondary text-white font-semibold px-8 py-3 rounded-lg hover:shadow-xl hover:shadow-primary/50 transition-all"
             >
               Limpiar filtros
             </button>

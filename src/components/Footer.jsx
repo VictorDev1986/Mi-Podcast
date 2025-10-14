@@ -10,10 +10,10 @@ import React from 'react';
 // Componente funcional Footer
 const Footer = () => {
   return (
-    // footer: contenedor principal con fondo oscuro y texto blanco
-    <footer className="bg-dark text-white mt-auto">
-      {/* Contenedor interno con padding */}
-      <div className="container mx-auto px-4 py-8">
+    // footer: contenedor principal con fondo oscuro y gradiente, texto blanco, sin márgenes
+    <footer className="bg-dark-lighter border-t border-purple-500/20 text-white mt-auto w-full">
+      {/* Contenedor interno con ancho máximo y padding */}
+      <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Grid con 3 columnas en pantallas grandes, 1 en móvil */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
@@ -69,7 +69,7 @@ const Footer = () => {
                 href="https://spotify.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-700 hover:bg-green-500 rounded-full flex items-center justify-center transition-colors"
+                className="w-10 h-10 bg-dark-card hover:bg-green-500 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:shadow-lg hover:shadow-green-500/50"
                 aria-label="Spotify"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -82,7 +82,7 @@ const Footer = () => {
                 href="https://youtube.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-700 hover:bg-red-600 rounded-full flex items-center justify-center transition-colors"
+                className="w-10 h-10 bg-dark-card hover:bg-red-600 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:shadow-lg hover:shadow-red-500/50"
                 aria-label="YouTube"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -95,7 +95,7 @@ const Footer = () => {
                 href="https://podcasts.apple.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-700 hover:bg-purple-600 rounded-full flex items-center justify-center transition-colors"
+                className="w-10 h-10 bg-dark-card hover:bg-purple-600 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:shadow-lg hover:shadow-purple-500/50"
                 aria-label="Apple Podcasts"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -108,7 +108,7 @@ const Footer = () => {
                 href="/rss.xml" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-700 hover:bg-orange-500 rounded-full flex items-center justify-center transition-colors"
+                className="w-10 h-10 bg-dark-card hover:bg-orange-500 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:shadow-lg hover:shadow-orange-500/50"
                 aria-label="RSS Feed"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -120,11 +120,11 @@ const Footer = () => {
         </div>
 
         {/* Línea divisoria */}
-        <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400 text-sm">
+        <div className="border-t border-purple-500/20 mt-8 pt-6 text-center text-gray-400 text-sm">
           {/* Copyright con año dinámico */}
           <p>&copy; {new Date().getFullYear()} Mi Podcast. Todos los derechos reservados.</p>
           <p className="mt-2">
-            Hecho con ❤️ usando React + Vite + Tailwind CSS
+            Hecho con ❤️ por Victor Sanchez
           </p>
         </div>
       </div>

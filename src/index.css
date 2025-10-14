@@ -17,9 +17,11 @@
   Aquí podemos agregar estilos globales que no están en Tailwind
 */
 
-/* Asegura que el HTML y body ocupen toda la altura de la pantalla */
+/* Asegura que el HTML y body ocupen toda la altura de la pantalla sin márgenes */
 html, body, #root {
-  @apply h-full;
+  @apply h-full bg-dark text-gray-100;
+  margin: 0;
+  padding: 0;
 }
 
 /* Estilo para el scroll suave en toda la página */
@@ -27,17 +29,62 @@ html {
   @apply scroll-smooth;
 }
 
-/* Estilo personalizado para el reproductor de audio */
-.audio-player {
-  @apply fixed bottom-0 left-0 right-0 bg-gradient-to-r from-primary to-secondary shadow-2xl;
+/* Personalización de la scrollbar para tema oscuro */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-/* Animación personalizada para las tarjetas de episodios */
+::-webkit-scrollbar-track {
+  background: #0F172A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #181718, #EC4899);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #7C3AED, #DB2777);
+}
+
+/* Estilo personalizado para el reproductor de audio - transparente con glass effect */
+.audio-player {
+  @apply fixed bottom-0 left-0 right-0 w-full shadow-2xl;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+/* Animación personalizada para las tarjetas de episodios - tema oscuro */
 .episode-card {
-  @apply transition-transform duration-300 hover:scale-105 hover:shadow-2xl;
+  @apply transition-all duration-300 hover:scale-105;
+  box-shadow: 0 4px 20px rgba(168, 85, 247, 0.3);
+}
+
+.episode-card:hover {
+  box-shadow: 0 8px 40px rgba(168, 85, 247, 0.5);
 }
 
 /* Estilo para mejorar la legibilidad del texto */
 .prose {
   @apply text-gray-700 leading-relaxed;
+}
+
+/* Animación para el menú móvil */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
 }

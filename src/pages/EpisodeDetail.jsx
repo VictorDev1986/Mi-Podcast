@@ -33,18 +33,18 @@ const EpisodeDetail = () => {
   // Si no se encuentra el episodio, mostramos un mensaje de error
   if (!episode) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="min-h-screen bg-dark flex items-center justify-center">
         <div className="text-center">
           <div className="text-6xl mb-4">😕</div>
-          <h2 className="text-3xl font-bold text-gray-700 mb-4">
+          <h2 className="text-3xl font-bold text-white mb-4">
             Episodio no encontrado
           </h2>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-400 mb-6">
             El episodio que buscas no existe o ha sido eliminado
           </p>
           <Link
             to="/episodes"
-            className="bg-gradient-to-r from-primary to-secondary text-white font-semibold px-8 py-3 rounded-lg hover:shadow-xl transition-all inline-block"
+            className="bg-gradient-to-r from-primary to-secondary text-white font-semibold px-8 py-3 rounded-lg hover:shadow-xl hover:shadow-primary/50 transition-all inline-block"
           >
             Ver todos los episodios
           </Link>
@@ -84,21 +84,21 @@ const EpisodeDetail = () => {
   const hasNext = episode.id < episodesData.length;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-dark">
       
       {/* Breadcrumbs - Navegación de migas de pan */}
-      <div className="bg-white border-b">
+      <div className="bg-dark-lighter border-b border-purple-500/20">
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center space-x-2 text-sm">
-            <Link to="/" className="text-gray-500 hover:text-primary">
+            <Link to="/" className="text-gray-400 hover:text-primary">
               Inicio
             </Link>
-            <span className="text-gray-400">/</span>
-            <Link to="/episodes" className="text-gray-500 hover:text-primary">
+            <span className="text-gray-600">/</span>
+            <Link to="/episodes" className="text-gray-400 hover:text-primary">
               Episodios
             </Link>
-            <span className="text-gray-400">/</span>
-            <span className="text-gray-700 font-medium">
+            <span className="text-gray-600">/</span>
+            <span className="text-gray-200 font-medium">
               Episodio {episode.id}
             </span>
           </nav>
@@ -172,19 +172,19 @@ const EpisodeDetail = () => {
               </button>
 
               {/* Información adicional */}
-              <div className="bg-white rounded-xl p-6 mt-6 shadow-md">
-                <h3 className="font-bold text-gray-700 mb-4">Información</h3>
+              <div className="bg-dark-card border border-purple-500/20 rounded-xl p-6 mt-6 shadow-md shadow-primary/10">
+                <h3 className="font-bold text-white mb-4">Información</h3>
                 
                 {/* Duración */}
-                <div className="flex items-center justify-between mb-3 pb-3 border-b">
-                  <span className="text-gray-600">Duración:</span>
-                  <span className="font-semibold text-gray-800">{episode.duration}</span>
+                <div className="flex items-center justify-between mb-3 pb-3 border-b border-purple-500/20">
+                  <span className="text-gray-400">Duración:</span>
+                  <span className="font-semibold text-gray-200">{episode.duration}</span>
                 </div>
 
                 {/* Fecha de publicación */}
-                <div className="flex items-center justify-between mb-3 pb-3 border-b">
-                  <span className="text-gray-600">Publicado:</span>
-                  <span className="font-semibold text-gray-800">
+                <div className="flex items-center justify-between mb-3 pb-3 border-b border-purple-500/20">
+                  <span className="text-gray-400">Publicado:</span>
+                  <span className="font-semibold text-gray-200">
                     {new Date(episode.date).toLocaleDateString('es-ES', {
                       year: 'numeric',
                       month: 'long',
@@ -195,8 +195,8 @@ const EpisodeDetail = () => {
 
                 {/* Episodio número */}
                 <div className="flex items-center justify-between">
-                  <span className="text-gray-600">Episodio:</span>
-                  <span className="font-semibold text-gray-800">#{episode.id}</span>
+                  <span className="text-gray-400">Episodio:</span>
+                  <span className="font-semibold text-gray-200">#{episode.id}</span>
                 </div>
               </div>
             </div>
@@ -206,37 +206,37 @@ const EpisodeDetail = () => {
           <div className="lg:col-span-2">
             
             {/* Título del episodio */}
-            <h1 className="text-4xl md:text-5xl font-bold text-dark mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               {episode.title}
             </h1>
 
             {/* Descripción completa */}
-            <div className="bg-white rounded-2xl p-8 shadow-md mb-8">
-              <h2 className="text-2xl font-bold text-gray-700 mb-4">
+            <div className="bg-dark-card border border-purple-500/20 rounded-2xl p-8 shadow-md shadow-primary/10 mb-8">
+              <h2 className="text-2xl font-bold text-white mb-4">
                 Acerca de este episodio
               </h2>
-              <p className="text-gray-600 text-lg leading-relaxed">
+              <p className="text-gray-300 text-lg leading-relaxed">
                 {episode.description}
               </p>
             </div>
 
             {/* Sección de notas adicionales (ejemplo estático) */}
-            <div className="bg-white rounded-2xl p-8 shadow-md mb-8">
-              <h2 className="text-2xl font-bold text-gray-700 mb-4">
+            <div className="bg-dark-card border border-purple-500/20 rounded-2xl p-8 shadow-md shadow-primary/10 mb-8">
+              <h2 className="text-2xl font-bold text-white mb-4">
                 Puntos clave
               </h2>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
                   <span className="text-primary text-xl">•</span>
-                  <span className="text-gray-600">Consejos prácticos y accionables</span>
+                  <span className="text-gray-300">Consejos prácticos y accionables</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <span className="text-primary text-xl">•</span>
-                  <span className="text-gray-600">Ejemplos de la vida real</span>
+                  <span className="text-gray-300">Ejemplos de la vida real</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <span className="text-primary text-xl">•</span>
-                  <span className="text-gray-600">Recursos y referencias mencionadas</span>
+                  <span className="text-gray-300">Recursos y referencias mencionadas</span>
                 </li>
               </ul>
             </div>
@@ -249,8 +249,8 @@ const EpisodeDetail = () => {
                 disabled={!hasPrevious}
                 className={`flex items-center space-x-2 px-6 py-3 rounded-lg font-semibold transition-all ${
                   hasPrevious
-                    ? 'bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white'
-                    : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                    ? 'bg-dark-card text-primary border-2 border-primary hover:bg-primary hover:text-white'
+                    : 'bg-dark-card text-gray-600 border-2 border-gray-700 cursor-not-allowed'
                 }`}
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -265,8 +265,8 @@ const EpisodeDetail = () => {
                 disabled={!hasNext}
                 className={`flex items-center space-x-2 px-6 py-3 rounded-lg font-semibold transition-all ${
                   hasNext
-                    ? 'bg-gradient-to-r from-primary to-secondary text-white hover:shadow-xl hover:scale-105'
-                    : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                    ? 'bg-gradient-to-r from-primary to-secondary text-white hover:shadow-xl hover:shadow-primary/50 hover:scale-105'
+                    : 'bg-dark-card text-gray-600 border-2 border-gray-700 cursor-not-allowed'
                 }`}
               >
                 <span>Siguiente</span>
