@@ -1,0 +1,43 @@
+/* 
+  Archivo CSS principal del proyecto
+  Importamos las directivas de Tailwind CSS para poder usar sus clases utilitarias
+*/
+
+/* @tailwind base: resetea estilos por defecto del navegador y aplica estilos base */
+@tailwind base;
+
+/* @tailwind components: clases de componentes reutilizables de Tailwind */
+@tailwind components;
+
+/* @tailwind utilities: clases utilitarias (bg-blue-500, text-center, etc.) */
+@tailwind utilities;
+
+/* 
+  Estilos personalizados adicionales
+  Aquí podemos agregar estilos globales que no están en Tailwind
+*/
+
+/* Asegura que el HTML y body ocupen toda la altura de la pantalla */
+html, body, #root {
+  @apply h-full;
+}
+
+/* Estilo para el scroll suave en toda la página */
+html {
+  @apply scroll-smooth;
+}
+
+/* Estilo personalizado para el reproductor de audio */
+.audio-player {
+  @apply fixed bottom-0 left-0 right-0 bg-gradient-to-r from-primary to-secondary shadow-2xl;
+}
+
+/* Animación personalizada para las tarjetas de episodios */
+.episode-card {
+  @apply transition-transform duration-300 hover:scale-105 hover:shadow-2xl;
+}
+
+/* Estilo para mejorar la legibilidad del texto */
+.prose {
+  @apply text-gray-700 leading-relaxed;
+}
