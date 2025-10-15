@@ -9,18 +9,18 @@ export default {
   ],
   theme: {
     extend: {
-      // Paleta de colores oscuros moderna con gradientes
+      // Paleta de colores moderna con tema claro profesional
       colors: {
-        // Colores principales con tonos oscuros modernos
+        // Colores principales vibrantes
         primary: '#A855F7', // Púrpura vibrante
         secondary: '#EC4899', // Rosa brillante
         accent: '#3B82F6', // Azul eléctrico
         dark: {
-          DEFAULT: '#0F172A', // Azul oscuro profundo
-          lighter: '#1E293B', // Azul oscuro medio
-          card: '#1E293B', // Fondo de tarjetas
+          DEFAULT: '#1f2937', // Gris oscuro para texto
+          lighter: '#374151', // Gris medio
+          card: '#f9fafb', // Fondo claro para tarjetas
         },
-        // Gradientes oscuros
+        // Gradientes
         'gradient-start': '#7C3AED', // Púrpura oscuro
         'gradient-mid': '#A855F7', // Púrpura medio
         'gradient-end': '#EC4899', // Rosa

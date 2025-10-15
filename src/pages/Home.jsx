@@ -15,23 +15,22 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     // Contenedor principal con mínimo de altura de pantalla completa
-    <div className="min-h-screen bg-dark">
+    <div className="min-h-screen bg-white">
       
-      {/* Hero Section - Sección de bienvenida con gradiente */}
-      <section className="bg-gradient-purple text-white py-20 relative overflow-hidden">
+      {/* Hero Section - Sección de bienvenida */}
+      <section className="bg-white py-20 relative overflow-hidden border-b border-gray-200">
         {/* Efectos de fondo adicionales */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-dark/50"></div>
-        <div className="absolute top-10 left-10 w-72 h-72 bg-primary/20 rounded-full filter blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-10 right-10 w-96 h-96 bg-secondary/20 rounded-full filter blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-10 left-10 w-72 h-72 bg-purple-100/30 rounded-full filter blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-10 right-10 w-96 h-96 bg-pink-100/30 rounded-full filter blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
         <div className="container mx-auto px-4 text-center relative z-10">
           
           {/* Título principal con animación */}
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in bg-gradient-to-r from-purple-600 via-pink-500 to-purple-700 bg-clip-text text-transparent">
             Bienvenidos a mi podcats
           </h1>
           
           {/* Descripción */}
-          <p className="text-xl md:text-2xl mb-8 text-gray-100 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl mb-8 text-gray-600 max-w-3xl mx-auto">
             Podcasts creados con Inteligencia Artificial. Explora contenido único 
             sobre idiomas, tecnología, aprendizaje y desarrollo personal,resumenes de libros diseñado para inspirarte 
             y ayudarte a crecer.
@@ -39,7 +38,7 @@ const Home = () => {
 
           {/* Badge de IA */}
           <div className="flex justify-center mb-4">
-            <span className="bg-white bg-opacity-20 backdrop-blur-lg text-white px-4 py-2 rounded-full text-sm font-medium flex items-center space-x-2">
+            <span className="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium flex items-center space-x-2 shadow-sm">
               <span>🤖</span>
               <span>Creado con IA</span>
               <span>✨</span>
@@ -52,7 +51,7 @@ const Home = () => {
             {/* Botón principal: Ver episodios */}
             <Link
               to="/episodes"
-              className="bg-white text-primary font-bold px-8 py-4 rounded-lg hover:shadow-2xl transition-all hover:scale-105"
+              className="bg-gradient-to-r from-primary to-secondary text-white font-bold px-8 py-4 rounded-lg hover:shadow-2xl transition-all hover:scale-105"
             >
               Explorar Episodios
             </Link>
@@ -60,7 +59,7 @@ const Home = () => {
             {/* Botón secundario: Acerca de */}
             <Link
               to="/about"
-              className="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-primary transition-all"
+              className="border-2 border-gray-300 text-gray-700 font-bold px-8 py-4 rounded-lg hover:bg-gray-50 hover:border-primary transition-all"
             >
               Conoce más
             </Link>
@@ -70,33 +69,33 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 max-w-4xl mx-auto">
             
             {/* Estadística 1: Episodios */}
-            <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6">
+            <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm">
               <div className="text-4xl font-bold mb-2">🎙️</div>
-              <div className="text-gray-100 font-semibold">Contenido Original</div>
-              <div className="text-sm text-gray-200 mt-1">Creado con IA</div>
+              <div className="text-gray-800 font-semibold">Contenido Original</div>
+              <div className="text-sm text-gray-600 mt-1">Creado con IA</div>
             </div>
 
             {/* Estadística 2: Calidad */}
-            <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6">
+            <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm">
               <div className="text-4xl font-bold mb-2">🎯</div>
-              <div className="text-gray-100 font-semibold">100% Educativo</div>
-              <div className="text-sm text-gray-200 mt-1">Contenido de valor</div>
+              <div className="text-gray-800 font-semibold">100% Educativo</div>
+              <div className="text-sm text-gray-600 mt-1">Contenido de valor</div>
             </div>
 
             {/* Estadística 3: Innovación */}
-            <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6">
+            <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm">
               <div className="text-4xl font-bold mb-2">🚀</div>
-              <div className="text-gray-100 font-semibold">Vanguardia Tech</div>
-              <div className="text-sm text-gray-200 mt-1">Producción IA</div>
+              <div className="text-gray-800 font-semibold">Vanguardia Tech</div>
+              <div className="text-sm text-gray-600 mt-1">Producción IA</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Sección de episodios recientes */}
-      <section className="container mx-auto px-4 py-16 relative">
+      <section className="container mx-auto px-4 py-16 relative bg-white">
         {/* Efecto de brillo de fondo */}
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-96 bg-gradient-radial from-primary/10 to-transparent"></div>
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-96 bg-gradient-radial from-purple-100/50 to-transparent"></div>
         {/* 
           EpisodeList con límite de 6 episodios
           El componente lee automáticamente desde episodes.json
@@ -109,9 +108,9 @@ const Home = () => {
       </section>
 
       {/* Sección de categorías */}
-      <section className="bg-dark-lighter py-16 border-y border-purple-500/20">
+      <section className="bg-gray-50 py-16 border-y border-gray-200">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">
             Explora por Categoría
           </h2>
 
@@ -146,14 +145,13 @@ const Home = () => {
       </section>
 
       {/* Sección de llamada a la acción para newsletter */}
-      <section className="bg-gradient-purple text-white py-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-dark/50 to-transparent"></div>
-        <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-accent/20 rounded-full filter blur-3xl"></div>
+      <section className="bg-purple-50 border-y border-purple-200 py-16 relative overflow-hidden">
+        <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-purple-100/50 rounded-full filter blur-3xl"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
             El Futuro del Podcasting está aquí
           </h2>
-          <p className="text-xl mb-8 text-gray-100">
+          <p className="text-xl mb-8 text-gray-600">
             Experimenta contenido educativo de calidad generado con Inteligencia Artificial. 
             Suscríbete para recibir nuevos episodios y actualizaciones
           </p>
@@ -166,7 +164,7 @@ const Home = () => {
                 placeholder="tu@email.com"
                 className="flex-1 px-6 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white"
               />
-              <button className="bg-white text-primary font-bold px-8 py-3 rounded-lg hover:shadow-xl transition-all hover:scale-105">
+              <button className="bg-gradient-to-r from-primary to-secondary text-white font-bold px-8 py-3 rounded-lg hover:shadow-xl transition-all hover:scale-105">
                 Suscribirse
               </button>
             </div>

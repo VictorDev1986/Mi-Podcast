@@ -19,9 +19,10 @@
 
 /* Asegura que el HTML y body ocupen toda la altura de la pantalla sin márgenes */
 html, body, #root {
-  @apply h-full bg-dark text-gray-100;
+  @apply h-full text-gray-800;
   margin: 0;
   padding: 0;
+  background: #ffffff;
 }
 
 /* Estilo para el scroll suave en toda la página */
@@ -29,17 +30,17 @@ html {
   @apply scroll-smooth;
 }
 
-/* Personalización de la scrollbar para tema oscuro */
+/* Personalización de la scrollbar para tema claro */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0F172A;
+  background: #f8f9fa;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #181718, #EC4899);
+  background: linear-gradient(180deg, #A855F7, #EC4899);
   border-radius: 5px;
 }
 
@@ -47,15 +48,15 @@ html {
   background: linear-gradient(180deg, #7C3AED, #DB2777);
 }
 
-/* Estilo personalizado para el reproductor de audio - transparente con glass effect */
+/* Estilo personalizado para el reproductor de audio - transparente con glass effect (igual que el header) */
 .audio-player {
   @apply fixed bottom-0 left-0 right-0 w-full shadow-2xl;
-  background: rgba(15, 23, 42, 0.8);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   margin: 0;
   padding: 0;
-  border-top: 1px solid rgba(168, 85, 247, 0.3);
+  border-top: 1px solid rgba(229, 231, 235, 0.6);
 }
 
 /* Animación personalizada para las tarjetas de episodios - tema oscuro */

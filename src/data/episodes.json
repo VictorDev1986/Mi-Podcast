@@ -2,42 +2,94 @@
   {
     "id": 1,
     "title": "Input Comprensible: La Clave para Aprender Inglés",
-    "description": "Descubre cómo el input comprensible puede transformar tu aprendizaje del inglés. Exploramos el método de Stephen Krashen, técnicas prácticas y recursos recomendados para adquirir el idioma de forma natural y efectiva.",
-    "duration": "15:32",
-    "date": "2025-10-01",
+    "description": "El libro De Cero a Políglota de Mr. Salas (Alberto Salas) es una guía inspiradora que rompe con los métodos tradicionales de aprendizaje de idiomas. El autor, docente y lingüista, comparte su experiencia personal mostrando que aprender un idioma no se trata de memorizar reglas gramaticales o listas de vocabulario, sino de adquirirlo de forma natural, como lo hacemos con nuestra lengua materna. Su propuesta central es el concepto de input comprensible que consiste en exponerse de manera constante al idioma —ya sea escuchando, leyendo o interactuando— en contextos que podamos entender parcialmente. Con este método, el aprendizaje se vuelve progresivo, natural y duradero. El autor enfatiza que cada persona tiene su propio ritmo y que lo importante no es estudiar más, sino hacerlo de forma significativa y constante. A lo largo del libro, Mr. Salas invita a los lectores a disfrutar el proceso, a dejar atrás la frustración y la creencia de que no se tiene talento para los idiomas. También critica la actitud elitista de algunos hablantes que hacen del aprendizaje un club cerrado, recordando que ser políglota no se mide por cuántos idiomas hablas, sino por tu apertura a seguir aprendiendo y conectar con otras culturas.",
+    "duration": "18:02",
+    "date": "2025-09-01",
     "audioUrl": "https://ia800505.us.archive.org/2/items/de-cero-a-poliglota-la-estrategia-de-mr_202510/De_Cero_a_Pol%C3%ADglota__La_Estrategia_de_Mr.mp3",
-    "image": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=400&h=400&fit=crop",
-    "category": "Idiomas"
+    "image": "https://cdn.wallapop.com/images/10420/je/ct/__/c10420p1172969636/i5920105806.jpg?pictureSize=W800",
+    "category": "Idiomas",
+    "credits": {
+      "mainSource": {
+        "type": "book",
+        "title": "De cero a poliglota: Como aprender un idioma en 7 dias",
+        "author": "Alberto Daniel Salas García ",
+        "publisher": "Laredo Publishing",
+        "year": 2021,
+        "links": {
+          "amazon": "https://www.amazon.com/-/es/Mr-Salas-ebook/dp/B095M9QMJD",
+          "officialSite": "https://www.skool.com/mrsalas/about"
+        }
+      }
+    }
   },
   {
     "id": 2,
-    "title": "Creatividad en el día a día [DEMO FUNCIONAL]",
-    "description": "Este es un episodio de prueba con un audio que definitivamente funciona. Úsalo para verificar que el reproductor está configurado correctamente.",
-    "duration": "22:15",
+    "title": "El Superpoder del Siglo XXI Desbloquea el Trabajo a Fondo",
+    "description": "Este extenso texto en español ofrece un análisis sobre el creciente valor y la escasez del trabajo profundo o la concentración intensa en la economía moderna. El autor argumenta que la tecnología digital está reestructurando el mercado laboral, valorando enormemente a los trabajadores altamente cualificados (como el experto en datos Nate Silver), a las superestrellas (como el programador David Heinemeier Hansson) y a los propietarios de capital (como John Doerr). Para entrar en los grupos que prosperan, el texto enfatiza la necesidad de dominar rápidamente habilidades cognitivas difíciles, lo cual requiere una concentración intensa y sin distracciones, citando la investigación sobre la práctica deliberada y la mielina. Se critica la cultura de la distracción y el trabajo superficial, señalando que los hábitos de hiperconectividad y la falta de métricas claras de productividad impulsan a los trabajadores a enfocarse en lo fácil, como el correo electrónico y las redes sociales. Finalmente, se proponen cuatro filosofías prácticas (monástica, bimodal, rítmica y periodística) y varias estrategias, como programar cada minuto y aplicar el método artesano a la selección de herramientas, para cultivar una vida profesional centrada en la profundidad y el sentido.",
+    "duration": "22:10",
     "date": "2025-10-03",
-    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-    "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=400&h=400&fit=crop",
-    "category": "Creatividad"
+    "audioUrl": "https://ia801009.us.archive.org/18/items/el-superpoder-del-siglo-xxi-desbloquea-el-trabajo-a-fondo-dee/El_Superpoder_del_Siglo_XXI__Desbloquea_el_Trabajo_a_Fondo__Dee.mp3",
+    "image": "https://b2729162.smushcdn.com/2729162/wp-content/uploads/2021/06/Deep-Work-by-Cal-Newport-Book.jpg?lossy=1&strip=1&webp=1&size=600x0",
+    "category": "Desarrollo Personal",
+    "credits": {
+      "mainSource": {
+        "type": "book",
+        "title": "Deep Work: Rules for Focused Success in a Distracted World",
+        "author": "Cal Newport",
+        "publisher": "Peninsula",
+        "year": 2016,
+        "links": {
+          "amazon": "https://www.amazon.com/-/es/Cal-Newport-ebook/dp/B09QBV29JR/ref=sr_1_1?crid=8C5ZSUNLM5VA&dib=eyJ2IjoiMSJ9.PCSj6GsqsDedVq_dBLGzhlz-KdtP7A21qki2KwDPnZJ7ODRE381w16bEYXkjoYhb1RdOKJLzOagjPq1wy10CqqH_Urtyo0O2nRnStvBTBHfEnKPdHP-mjFzqlgvP3WPqrH6XWpuhG3_0EFOrRGoThg.3VwPexdn2R-FLRY8KypV4B3uWQIO1waAhoWuWtOgMpQ&dib_tag=se&keywords=enfocate+cal+newport&qid=1760511517&sprefix=enfocate+%2Caps%2C197&sr=8-1",
+          "officialSite": "https://calnewport.com/"
+        }
+      }
+    }
   },
   {
     "id": 3,
-    "title": "Productividad sin burnout",
-    "description": "Cómo ser productivo sin sacrificar tu salud mental. Hablamos sobre equilibrio, descanso y técnicas sostenibles de organización.",
-    "duration": "28:45",
+    "title": "Adolescentes y su adicción a las pantallas",
+    "description": "En este episodio exploramos el tema de la adicción a las redes sociales y al uso excesivo de la tecnología en niños y adolescentes. A partir de un recurso educativo dirigido a padres y docentes, analizamos cómo identificar las señales de alerta de una posible adicción digital, los factores de riesgo y de protección —tanto personales, familiares como sociales—, y las mejores estrategias preventivas para promover un uso saludable de la tecnología. También hablaremos sobre cómo regular emociones como la ira, la ansiedad y la tristeza, fortalecer la autoestima y fomentar habilidades para resolver problemas de manera efectiva. Además, compartiremos recomendaciones prácticas para padres y educadores sobre el uso responsable y seguro de las redes, junto con una mirada a la responsabilidad legal que implica el mundo digital. El objetivo de este episodio es reflexionar sobre cómo reaprender una relación sana con la tecnología, para que sea una herramienta que potencie la vida y no una fuente de dependencia o conflicto.",
+    "duration": "17:17",
     "date": "2025-10-05",
-    "audioUrl": "/audios/episodio3.mp3",
-    "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&h=400&fit=crop",
-    "category": "Productividad"
+    "audioUrl": "https://ia801007.us.archive.org/15/items/ninos-y-pantallas-guia-definitiva-contra-la-adiccion-a-redes/Ni%C3%B1os_y_Pantallas__Gu%C3%ADa_Definitiva_Contra_la_Adicci%C3%B3n_a_Redes__.mp3",
+    "image": "https://enfamilia.aeped.es/sites/enfamilia.aeped.es/files/images/articulos/shutterstock_267444602.jpg",
+    "category": "Desarrollo Personal",
+    "credits": {
+      "mainSource": {
+        "type": "book",
+        "title": "Adicción a las redes sociales y nuevas tecnologías en niños y adolescentes",
+        "author": "Ana Requesens Moll",
+        "publisher": "Piramide",
+        "year": 2012,
+        "links": {
+          "amazon": "https://www.amazon.com/-/es/Adicci%C3%B3n-sociales-nuevas-tecnolog%C3%ADas-adolescentes/dp/8436826868",
+          "officialSite": "#"
+        }
+      }
+    }
   },
   {
     "id": 4,
-    "title": "Entrevista: Emprendedores digitales",
-    "description": "Conversamos con emprendedores exitosos que comparten sus historias, fracasos y lecciones aprendidas en el mundo digital.",
-    "duration": "35:20",
+    "title": "Habitos Atómicos reglas para construir buenos hábitos",
+    "description": "En este episodio hablaremos sobre uno de los libros más influyentes en el desarrollo personal: Hábitos Atómicos de James Clear. Esta obra nos enseña cómo pequeños cambios diarios pueden generar resultados extraordinarios a largo plazo. A través de su propia historia de superación —tras una grave lesión en la cabeza—, el autor demuestra el poder de la mejora continua y cómo los hábitos pueden transformar por completo nuestra vida. James Clear nos presenta las Cuatro Leyes del Cambio de Conducta: hacer los hábitos obvios, atractivos, sencillos y satisfactorios. Estas leyes son la base para crear sistemas efectivos que nos ayuden a construir buenos hábitos y eliminar los malos. El mensaje central del libro es claro: los hábitos son el interés compuesto del crecimiento personal. No se trata de perseguir metas momentáneas, sino de diseñar procesos y sistemas sostenibles que nos lleven a mejorar un poco cada día. También reflexionaremos sobre la importancia de la identidad —convertirnos en la persona que encarna los hábitos que queremos tener—, el papel del entorno y las relaciones sociales en nuestra conducta, y cómo la repetición consciente convierte los nuevos comportamientos en parte natural de nuestra rutina. Prepárate para descubrir cómo pequeños cambios pueden tener un impacto enorme en tu vida.",
+    "duration": "25:38",
     "date": "2025-10-08",
-    "audioUrl": "/audios/episodio4.mp3",
-    "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=400&h=400&fit=crop",
-    "category": "Entrevistas"
+    "audioUrl": "https://ia800600.us.archive.org/0/items/habitos-atomicos-la-regla-del-1-y-el-poder-de-los-cambios-min/H%C3%A1bitos_At%C3%B3micos__La_Regla_del_1__y_el_Poder_de_los_Cambios_Min.mp3",
+    "image": "https://jimmybedoya.com/wp-content/uploads/2024/06/IMG_6700.jpg",
+    "category": "Desarrollo Personal",
+    "credits": {
+      "mainSource": {
+        "type": "book",
+        "title": "Habitos Atómicos",
+        "author": "James Clear",
+        "publisher": "Atria Books",
+        "year": 2018,
+        "links": {
+          "amazon": "https://www.amazon.com/Habits-Atomic-James-Clear/dp/0735211299 ",
+          "officialSite": "https://jamesclear.com/atomic-habits"
+        }
+      }
+    }
   },
   {
     "id": 5,
@@ -47,7 +99,20 @@
     "date": "2025-10-10",
     "audioUrl": "/audios/episodio5.mp3",
     "image": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=400&h=400&fit=crop",
-    "category": "Bienestar"
+    "category": "Bienestar",
+    "credits": {
+      "mainSource": {
+        "type": "book",
+        "title": "Digital Minimalism: Choosing a Focused Life in a Noisy World",
+        "author": "Cal Newport",
+        "publisher": "Portfolio",
+        "year": 2019,
+        "links": {
+          "amazon": "https://www.amazon.com/Digital-Minimalism-Choosing-Focused-Noisy/dp/0525536515",
+          "officialSite": "https://www.goodreads.com/book/show/40672036-digital-minimalism"
+        }
+      }
+    }
   },
   {
     "id": 6,
@@ -57,6 +122,19 @@
     "date": "2025-10-12",
     "audioUrl": "/audios/episodio6.mp3",
     "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=400&fit=crop",
-    "category": "Tecnología"
+    "category": "Tecnología",
+    "credits": {
+      "mainSource": {
+        "type": "book",
+        "title": "Life 3.0: Being Human in the Age of Artificial Intelligence",
+        "author": "Max Tegmark",
+        "publisher": "Knopf",
+        "year": 2017,
+        "links": {
+          "amazon": "https://www.amazon.com/Life-3-0-Being-Artificial-Intelligence/dp/1101946598",
+          "officialSite": "https://www.goodreads.com/book/show/34272565-life-3-0"
+        }
+      }
+    }
   }
 ]

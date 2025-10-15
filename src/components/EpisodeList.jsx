@@ -80,10 +80,10 @@ const EpisodeList = ({ limit = null, title = "Todos los episodios" }) => {
           - grid: activa CSS Grid
           - grid-cols-1: 1 columna en móvil
           - md:grid-cols-2: 2 columnas en tablets
-          - lg:grid-cols-3: 3 columnas en desktop
-          - gap-8: espacio entre tarjetas
+          - lg:grid-cols-4: 4 columnas en desktop
+          - gap-6: espacio entre tarjetas
       */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {/* 
           map(): recorre el array de episodios y crea un componente EpisodeCard por cada uno
           - episode: el objeto del episodio actual en la iteración

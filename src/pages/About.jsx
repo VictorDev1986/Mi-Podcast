@@ -12,16 +12,16 @@ import { Link } from 'react-router-dom';
 // Componente funcional About
 const About = () => {
   return (
-    <div className="min-h-screen bg-dark">
+    <div className="min-h-screen bg-white">
       
-      {/* Hero section con gradiente */}
-      <div className="bg-gradient-purple text-white py-16 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl"></div>
+      {/* Hero section con fondo blanco */}
+      <div className="bg-white py-16 relative overflow-hidden border-b border-gray-200">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-purple-100/30 rounded-full filter blur-3xl"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-600 via-pink-500 to-purple-700 bg-clip-text text-transparent">
             Acerca de Nuestro Podcast
           </h1>
-          <p className="text-xl text-gray-100 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Conoce nuestra historia, misión y el equipo detrás de cada episodio
           </p>
         </div>
@@ -32,10 +32,10 @@ const About = () => {
         
         {/* Sección: Nuestra Misión */}
         <div className="max-w-4xl mx-auto mb-16">
-          <div className="bg-dark-card border border-purple-500/20 rounded-2xl shadow-lg shadow-primary/10 p-8 md:p-12">
+          <div className="bg-white border border-gray-200 rounded-2xl shadow-lg p-8 md:p-12">
             <div className="text-center mb-8">
               <div className="text-5xl mb-4">🎯</div>
-              <h2 className="text-3xl font-bold text-white mb-4">
+              <h2 className="text-3xl font-bold text-gray-800 mb-4">
                 Nuestra Misión
               </h2>
             </div>
@@ -55,7 +55,7 @@ const About = () => {
 
         {/* Sección: Valores */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-white text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 text-center mb-12">
             Nuestros Valores
           </h2>
           

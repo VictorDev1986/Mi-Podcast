@@ -199,10 +199,10 @@ const Player = () => {
             />
             {/* Título y categoría */}
             <div className="flex-1 min-w-0">
-              <h4 className="text-white font-semibold truncate">
+              <h4 className="text-gray-800 font-semibold truncate">
                 {currentEpisode.title}
               </h4>
-              <p className="text-gray-200 text-sm truncate">
+              <p className="text-gray-600 text-sm truncate">
                 {currentEpisode.category}
               </p>
             </div>
@@ -217,7 +217,7 @@ const Player = () => {
               {/* Botón de retroceder 10 segundos */}
               <button
                 onClick={handleRewind}
-                className="text-white hover:text-gray-200 transition-colors"
+                className="text-gray-700 hover:text-primary transition-colors"
                 title="Retroceder 10s"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
@@ -246,7 +246,7 @@ const Player = () => {
               {/* Botón de adelantar 10 segundos */}
               <button
                 onClick={handleForward}
-                className="text-white hover:text-gray-200 transition-colors"
+                className="text-gray-700 hover:text-primary transition-colors"
                 title="Adelantar 10s"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
@@ -257,7 +257,7 @@ const Player = () => {
               {/* Botón de detener */}
               <button
                 onClick={stop}
-                className="text-white hover:text-gray-200 transition-colors"
+                className="text-gray-700 hover:text-red-500 transition-colors"
                 title="Detener"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
@@ -269,7 +269,7 @@ const Player = () => {
             {/* Barra de progreso */}
             <div className="w-full flex items-center space-x-2">
               {/* Tiempo actual */}
-              <span className="text-white text-xs font-mono w-12 text-right">
+              <span className="text-gray-700 text-xs font-mono w-12 text-right">
                 {formatTime(progress)}
               </span>
               
@@ -280,14 +280,14 @@ const Player = () => {
                 max={duration || 0}
                 value={progress}
                 onChange={handleSeek}
-                className="flex-1 h-2 bg-white bg-opacity-30 rounded-full appearance-none cursor-pointer"
+                className="flex-1 h-2 bg-gray-200 bg-opacity-60 rounded-full appearance-none cursor-pointer"
                 style={{
-                  background: `linear-gradient(to right, white ${progressPercent}%, rgba(255,255,255,0.3) ${progressPercent}%)`
+                  background: `linear-gradient(to right, #a855f7 ${progressPercent}%, rgba(229, 231, 235, 0.6) ${progressPercent}%)`
                 }}
               />
               
               {/* Tiempo total */}
-              <span className="text-white text-xs font-mono w-12">
+              <span className="text-gray-700 text-xs font-mono w-12">
                 {formatTime(duration)}
               </span>
             </div>
@@ -297,7 +297,7 @@ const Player = () => {
           <div className="flex items-center justify-end space-x-3">
             
             {/* Ícono de volumen (cambia según el nivel) */}
-            <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 20 20">
               {volume > 0.5 ? (
                 <path fillRule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clipRule="evenodd" />
               ) : volume > 0 ? (
@@ -315,7 +315,10 @@ const Player = () => {
               step="0.01"
               value={volume}
               onChange={handleVolumeChange}
-              className="w-24 h-2 bg-white bg-opacity-30 rounded-full appearance-none cursor-pointer"
+              className="w-24 h-2 bg-gray-200 bg-opacity-60 rounded-full appearance-none cursor-pointer"
+              style={{
+                background: `linear-gradient(to right, #a855f7 ${volume * 100}%, rgba(229, 231, 235, 0.6) ${volume * 100}%)`
+              }}
             />
           </div>
           </div>

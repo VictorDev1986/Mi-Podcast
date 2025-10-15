@@ -67,17 +67,17 @@ const Episodes = () => {
 
   return (
     // Contenedor principal con mínimo de altura de pantalla
-    <div className="min-h-screen bg-dark">
+    <div className="min-h-screen bg-white">
       
       {/* Header de la página */}
-      <div className="bg-gradient-purple text-white py-12 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-72 h-72 bg-secondary/20 rounded-full filter blur-3xl"></div>
+      <div className="bg-white py-12 relative overflow-hidden border-b border-gray-200">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-purple-100/30 rounded-full filter blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-72 h-72 bg-pink-100/30 rounded-full filter blur-3xl"></div>
         <div className="container mx-auto px-4 relative z-10">
-          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-purple-600 via-pink-500 to-purple-700 bg-clip-text text-transparent">
             Todos los Episodios
           </h1>
-          <p className="text-center text-gray-100 text-lg">
+          <p className="text-center text-gray-600 text-lg">
             Explora nuestra colección completa de episodios
           </p>
         </div>
@@ -102,7 +102,7 @@ const Episodes = () => {
               placeholder="Buscar episodios por título o descripción..."
               value={searchTerm}
               onChange={handleSearchChange}
-              className="w-full pl-12 pr-4 py-4 rounded-xl bg-dark-card text-black border-2 border-purple-500/20 focus:border-primary focus:outline-none transition-colors placeholder-gray-500"
+              className="w-full pl-12 pr-4 py-4 rounded-xl bg-white text-gray-800 border-2 border-gray-300 focus:border-primary focus:outline-none transition-colors placeholder-gray-400 shadow-sm"
             />
 
             {/* Botón para limpiar búsqueda (solo visible si hay texto) */}
@@ -139,7 +139,7 @@ const Episodes = () => {
                 className={`px-6 py-2 rounded-full font-medium transition-all ${
                   selectedCategory === category
                     ? 'bg-gradient-to-r from-primary to-secondary text-white shadow-lg shadow-primary/50'
-                    : 'bg-dark-card text-gray-300 border-2 border-purple-500/20 hover:border-primary'
+                    : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-primary shadow-sm'
                 }`}
               >
                 {category}
@@ -165,7 +165,7 @@ const Episodes = () => {
 
         {/* Grid de episodios filtrados */}
         {filteredEpisodes.length > 0 && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* 
               map(): recorre los episodios filtrados y crea una tarjeta para cada uno
             */}
@@ -182,10 +182,10 @@ const Episodes = () => {
         {filteredEpisodes.length === 0 && (
           <div className="text-center py-12">
             <div className="text-6xl mb-4">🔍</div>
-            <h3 className="text-2xl font-bold text-white mb-2">
+            <h3 className="text-2xl font-bold text-gray-800 mb-2">
               No hay episodios que coincidan
             </h3>
-            <p className="text-gray-400 mb-6">
+            <p className="text-gray-600 mb-6">
               Intenta con otros términos de búsqueda o selecciona una categoría diferente
             </p>
             <button
